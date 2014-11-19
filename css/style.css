@@ -560,8 +560,8 @@
 
 		#header .icons
 		{
-			font-size: 0.8em;
-			margin: 0 0 1em 0;
+			font-size: 1em;
+			margin: 0 0 3em 0;
 			text-align: center;
 		}
 		
@@ -577,7 +577,7 @@
 			
 				#header .icons a:hover
 				{
-					color: #fff;
+					color: #9a6935;
 				}
 
 	#logo

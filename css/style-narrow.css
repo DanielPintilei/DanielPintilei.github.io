@@ -34,7 +34,8 @@
 
 				ul.icons li a
 				{
-					width: 1.75em;
+					width: 3em;
+                    height:1.2em;
 				}
 
 	/* Item */
@@ -44,55 +45,7 @@
 			margin-bottom: 4.4em;
 		}
 
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
 
-	#header
-	{
-		width: 4.4em;
-	}
-
-	#logo
-	{
-	}
-	
-		#logo .image
-		{
-			position: relative;
-			margin: 0 0 0.5em 0;
-		}
-
-	#nav
-	{
-	}
-	
-		#nav ul
-		{
-		}
-		
-			#nav ul li
-			{
-			}
-			
-				#nav ul li a
-				{
-					font-size: 0.8em;
-					padding-top: 0.5em;
-					padding-bottom: 0.5em;
-				}
-				
-					#nav ul li a span
-					{
-						padding-right: 0em;
-					}
-					
-						#nav ul li a span:before
-						{
-							left: 100%;
-							margin-left: -1.25em;
-							line-height: 0;
-						}
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -100,7 +53,7 @@
 
 	#footer
 	{
-		margin-left: 4.4em;
+		margin-left: 5.5em;
 	}
 
 /*********************************************************************************/

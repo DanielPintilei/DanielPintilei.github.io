@@ -120,7 +120,7 @@
 
 		a:hover
 		{
-			color: #E27689;
+			color: #ff3333;
 			border-bottom-color: rgba(255,255,255,0);
 		}
 
@@ -507,7 +507,7 @@
 
 	.icon {
 		text-decoration: none;
-	}
+        	}
 
 		.icon:before {
 			display: block;
@@ -536,7 +536,7 @@
 		left: 0;
 		width: 4.4em;
 		height: 100%;
-		color: #fff;
+		color: #222629;
 		background: #222629 url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.1);
 		text-align: center;
@@ -560,8 +560,9 @@
 
 		#header .icons
 		{
-			font-size: 0.9em;
-			margin: 5em 0 0 0;
+            padding-right: 1em;
+            font-size: 1em;
+			margin: 0 0 0 0;
 			text-align: center;
 		}
 		
@@ -577,7 +578,7 @@
 			
 				#header .icons a:hover
 				{
-					color: #9a6935;
+					color: #ff3333;
 				}
 
 	#logo
@@ -662,7 +663,7 @@
 					{
 						background: rgba(0,0,0,0.15);
 						box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
-						color: #fff;
+						color: #f5ebd7;
 					}
 
 						#nav ul li a.active span
@@ -671,7 +672,7 @@
 
 							#nav ul li a.active span:before
 							{
-								color: #e27689;
+								color: #ff3333;
 							}
 
 /*********************************************************************************/

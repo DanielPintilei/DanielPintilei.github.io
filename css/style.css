@@ -193,7 +193,7 @@
 
 		.image
 		{
-			display: inline-block;
+			display: block;
 			border: 0;
 		}
 		
@@ -205,15 +205,15 @@
 			
 			.image.avatar48
 			{
-				width: 48px;
-				height: 48px;
-				background: #f00;
+				width: 3em;
+				height: 6em;
+				background: #ff3333;
 			}
 			
 				.image.avatar48 img
 				{
-					width: 48px;
-					height: 48px;
+					width: 3em;
+				height: 6em;
 				}
 
 			.image.fit
@@ -226,19 +226,19 @@
 			{
 				display: block;
 				width: 100%;
-				margin: 0 0 2em 0;
+				margin: 0 0 0 0;
 			}
 			
 			.image.left
 			{
 				float: left;
-				margin: 0 2em 2em 0;
+				margin: 0 0 0 0;
 			}
 			
 			.image.centered
 			{
 				display: block;
-				margin: 0 0 2em 0;
+				margin: 0 0 0 0;
 			}
 
 				.image.centered img
@@ -246,6 +246,7 @@
 					margin: 0 auto;
 					width: auto;
 				}
+
 
 	/* List */
 
@@ -355,23 +356,19 @@
 		{
 			position: relative;
 			display: inline-block;
-			border-radius: 0.35em;
-			color: #fff !important;
+			border-radius: 0.20em;
+			color: #ff3333 !important;
 			text-decoration: none;
 			padding: 0.75em 2.5em 0.75em 2.5em;
-			background-color: #8ebebc;
-			border: 0;
-			cursor: pointer;
-			background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');
-			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');
-			background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');
-			background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');
-			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url('images/overlay.png');			
-			-moz-transition: background-color 0.35s ease-in-out;
+			background-color: transparent;
+			border: 10px solid #ff3333;
+            cursor: pointer;
+			-moz-transition: color: #ff3333 0.35s ease-in-out;
 			-webkit-transition: background-color 0.35s ease-in-out;
 			-o-transition: background-color 0.35s ease-in-out;
 			-ms-transition: background-color 0.35s ease-in-out;
 			transition: background-color 0.35s ease-in-out;
+
 		}
 
 			input[type="button"]:hover,
@@ -379,15 +376,16 @@
 			input[type="reset"]:hover,
 			.button:hover
 			{
-				background-color: #9ececc;
-			}
+				background-color: #ff3333;
+               
+            }
 			
 			input[type="button"]:active,
 			input[type="submit"]:active,
 			input[type="reset"]:active,
 			.button:active
 			{
-				background-color: #7eaeac;
+				background-color: #ff3333;
 			}
 		
 	/* Item */
@@ -420,14 +418,14 @@
         	}
 
 		.icon:before {
-			display: block;
+			display: inline-block;
 			font-family: FontAwesome;
 			font-size: 1em;
 			text-decoration: none;
 			font-style: normal;
 			font-weight: normal;
-			line-height: 0;
-           	-webkit-font-smoothing:antialiased;
+			line-height: 1em;
+            -webkit-font-smoothing:antialiased;
 			-moz-osx-font-smoothing:grayscale;
 		}
 		
@@ -444,7 +442,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 4.4em;
+		width: 3em;
 		height: 100%;
 		color: #222629;
 		background: #222629 url('images/overlay.png');		
@@ -454,25 +452,25 @@
 		#header .top
 		{
 			position: absolute;
-			left: 0;
-			top: 0;
-			width: 4.4em;
-		}
+			width: 3em;
+           
+        }
 	
 		#header .bottom
 		{
 			position: absolute;
 			left: 0;
 			bottom: 0;
-			width: 4.4em;
+			width: 3em;
 		}
 
 		#header .icons
 		{
-            padding-right: 1em;
             font-size: 1em;
 			margin: 0 0 0 0;
 			text-align: center;
+            
+                       
 		}
 		
 			#header .icons a
@@ -483,17 +481,20 @@
 				-o-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
 				transition: color 0.35s ease-in-out;
+                
 			}
 			
 				#header .icons a:hover
 				{
 					color: #ff3333;
-				}
+                }
 
 	#logo
 	{
 		position: relative;
-		min-height: 20px;
+		margin: 0;
+		min-height: 6em;
+        min-width: 3em;
 		cursor: default;
 	}
 	
@@ -513,7 +514,7 @@
 			font-size: 0.6em;
 			color: rgba(255,255,255,0.5);
 			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
+			margin: 0 0 0 0;
 		}
 		
 		#logo .image
@@ -538,7 +539,8 @@
 				#nav ul li a
 				{
 					display: block;
-					padding: 0.5em 1.5em 0.5em 1.5em;
+					padding: 0;
+                    /*0.5em 1.5em 0.5em 1.5em*/
 					color: rgba(255,255,255,0.5);
 					text-decoration: none;
 					outline: 0;
@@ -555,7 +557,7 @@
 						position: relative;
 						display: block;
 						font-size: 1em;
-                        padding: 1em;
+                        padding: 1.25em;
 					}
 					
 						#nav ul li a span:before
@@ -564,7 +566,7 @@
 							left: 0;
 							color: #41484c;
 							text-align: center;
-							width: 1.25em;
+							width: 3em;
 							line-height: 0em;
 						}
 

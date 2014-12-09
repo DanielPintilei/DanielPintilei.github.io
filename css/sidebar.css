@@ -65,24 +65,24 @@
 .sidebar-nav #social li a {
     display: block;
     text-decoration: none;
-    color: #3d404a;
+    color: #343840;
 }
 
 .sidebar-nav #social li a:hover {
     text-decoration: none;
-    color: #c5775a;    
+    color: #00f6b3;    
 }
 
 .sidebar-nav #social li a:active,
 .sidebar-nav #social li a:focus {
     text-decoration: none;
-    color: #c5775a;
+    color: #00f6b3;
 }
 
 .sidebar-nav #menu li a {
     display: block;
     text-decoration: none;
-    color: #c5775a;
+    color: #00f6b3;
     height: 45px;
     
 }
@@ -90,7 +90,7 @@
 .sidebar-nav #menu li a:hover {
     text-decoration: none;
     color: #3d404a;
-    background-color: #c5775a;    
+    background-color: #00f6b3;    
 }
 
 .sidebar-nav #menu li a:active,
@@ -153,4 +153,6 @@
 
 .sidebar-brand img{
     width: 70px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }

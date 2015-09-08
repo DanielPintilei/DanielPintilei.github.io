@@ -1,4 +1,4 @@
 DanielPintilei.github.io
 ========================
 
-Daniel Pintilei - Disciple of Jesus Christ
+Daniel Pintilei — Disciple of Jesus Christ

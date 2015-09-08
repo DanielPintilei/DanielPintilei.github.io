@@ -1,15 +1,93 @@
 body {
-    background-color: #3d404a;
+    /*background: rgba(2,0,5,1);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,0,5,1)), color-stop(100%, rgba(9,1,5,1)));
+    background: -webkit-linear-gradient(left, rgba(2,0,5,1) 0%, rgba(9,1,5,1) 100%);
+    background: linear-gradient(to right, rgba(2,0,5,1) 0%, rgba(9,1,5,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020005', endColorstr='#090105', GradientType=1 ); 
+ */
+   background: rgba(2,0,5,1);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,0,5,1)), color-stop(69%, rgba(9,1,5,1)), color-stop(100%, rgba(9,1,5,1)));
+background: -webkit-linear-gradient(left, rgba(2,0,5,1) 0%, rgba(9,1,5,1) 69%, rgba(9,1,5,1) 100%);
+background: linear-gradient(to right, rgba(2,0,5,1) 0%, rgba(9,1,5,1) 69%, rgba(9,1,5,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020005', endColorstr='#090105', GradientType=1 );
+  
+    
+    
+    
     font-family: 'Source Code Pro';
+/*background: -webkit-linear-gradient(141deg, #020005, #090105, #14030b, #090105, #020005);
+background: linear-gradient(309deg, #020005, #090105, #14030b, #090105, #020005);
+background-size: 1000% 1000%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}*/
 }
 h1 {
-    color: #62636a;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #F5591B;
+    margin-top: 2em;
+    margin-bottom: 5em;
     text-align: center;
 }
+p{
+ font-size:2em;   
+}
+.txt{
+    
+     word-break: break-all;   
+  
+}
+::-moz-selection {
+    background: #F5591B;
+    color: #090105;
+    text-shadow: none;
+}
+::selection {
+    background: #F5591B;
+    color: #090105;
+    text-shadow: none;
+}
 a {  
+    color: #F5591B;
     -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
+}
+a:hover{
+color: firebrick;
+}
+
+#social ul{
+ padding: 0;
+    margin: 0;
+}
+#social li {
+    display: inline;
+    padding: 1em;
+    
+    list-style: none;
+    font-size: 1.5em;
+}
+#landing footer{
+ float: right; 
+    padding: 0;
+}
+.center{
+ text-align:center;   
+}
+.links{
+ margin-bottom: 5em;   
+}
+.social{
+font-size: 1.5em;
 }

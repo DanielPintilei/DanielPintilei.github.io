@@ -37,7 +37,14 @@ h1 {
     font-family: 'Source Sans Pro', sans-serif;
     color: #F5591B;
     margin-top: 2em;
-    margin-bottom: 5em;
+   
+    text-align: center;
+}
+h2{
+     margin-bottom: 5em;
+    font-family: 'Source Code Pro';
+    font-size: 1.2em;
+   
     text-align: center;
 }
 p{

@@ -73,7 +73,12 @@ a {
 a:hover{
 color: firebrick;
 }
-
+a:active{
+    color: firebrick;
+}
+a:visited{
+    color: firebrick;
+}
 #social ul{
  padding: 0;
     margin: 0;

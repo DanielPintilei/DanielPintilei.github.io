@@ -116,7 +116,7 @@ font-size: 1.5em;
 }
 #landing {
  /* Location of the image */
-  background-image: url("/img/wreck_dark4.jpg");
+  background-image: url("https://raw.githubusercontent.com/DanielPintilei/DanielPintilei.github.io/master/img/wreck_dark4.jpg");
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;

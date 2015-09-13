@@ -37,10 +37,19 @@ h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: #F5591B;
-    margin-top: 2em;
-   
+    margin-top: 2em;   
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0.1em solid #F5591B;   
+}
+#titlu{
+    display: block;
     text-align: center;
 }
+
 h2{
      margin-bottom: 5em;
     font-family: 'Source Code Pro';
@@ -103,4 +112,23 @@ a:visited{
 }
 .social{
 font-size: 1.5em;
+    margin-bottom: 20em;
+}
+#landing {
+ /* Location of the image */
+  background-image: url("/img/wreck_dark4.jpg");
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
 }

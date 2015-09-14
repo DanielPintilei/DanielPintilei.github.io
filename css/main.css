@@ -53,12 +53,12 @@ h1 {
     font-family: 'primiterus' , sans-serif;
     font-size: 3em;
     font-weight: 700;
-    color: #F5591B;
+    color: #FF4000;
     margin-top: 2em;   
     text-align: center;
     display: inline-block;
     padding: 0.35em 0.3em 0.25em 0.3em;
-    border: 0.05em solid #F5591B;   
+    border: 0.05em solid #FF4000;   
 }
 #titlu{
     display: block;
@@ -86,23 +86,23 @@ p{
     text-shadow: none;
 }
 ::selection {
-    background: #F5591B;
+    background: #FF4000;
     color: #090105;
     text-shadow: none;
 }
 a {  
-    color: #F5591B;
+    color: #FF4000;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
 a:hover{
-color: firebrick;
+color: #333333;
 }
 a:active{
-    color: firebrick;
+    color: #333333;
 }
 a:visited{
-    color: #F5591B;
+    color: #FF4000;
 }
 #social ul{
  padding: 0;
@@ -131,7 +131,7 @@ font-size: 1.5em;
 }
 #landing {
  /* Location of the image */
-  background-image: url("/img/wreck_dark4.jpg");
+  background-image: url("/img/wreck.jpg");
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;

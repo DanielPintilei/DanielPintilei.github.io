@@ -1,3 +1,5 @@
+@font-face { font-family: Quasith; src: url("/fonts/quasith-Regular.otf"); } 
+@font-face { font-family: primiterus; src: url("/fonts/primiterus.otf"); } 
 body {
     /*background: rgba(2,0,5,1);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,0,5,1)), color-stop(100%, rgba(9,1,5,1)));
@@ -33,17 +35,30 @@ animation: AnimationName 20s ease infinite;
     100%{background-position:51% 0%}
 }*/
 }
-h1 {
-    font-family: 'Source Sans Pro', sans-serif;
+/*h1 {
+    font-family: 'Quasith' , sans-serif;
+    font-size: 2em;
     font-weight: 600;
     color: #F5591B;
     margin-top: 2em;   
     text-align: center;
     display: inline-block;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top:10px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 7px;
     border: 0.1em solid #F5591B;   
+}*/
+h1 {
+    font-family: 'primiterus' , sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #F5591B;
+    margin-top: 2em;   
+    text-align: center;
+    display: inline-block;
+    padding: 0.35em 0.3em 0.25em 0.3em;
+    border: 0.05em solid #F5591B;   
 }
 #titlu{
     display: block;

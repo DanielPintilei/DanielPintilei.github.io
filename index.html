@@ -77,6 +77,30 @@
                 </div>
             </div>
             
+            <div class="row" id="doi">
+                <div class="col-md-12">  
+                      <h2></h2>
+                </div>
+            </div>
+            
+            
+               <div class="row" id="trei">
+                <div class="col-md-12">  
+                      <h2></h2>
+                </div>
+            </div>
+            
+               <div class="row" id="patru">
+                <div class="col-md-12">  
+                      <h2></h2>
+                </div>
+            </div>
+            
+               <div class="row" id="cinci">
+                <div class="col-md-12">  
+                      <h2></h2>
+                </div>
+            </div>
         </div>
         <!-- /#page-content-wrapper -->
     </div>    
@@ -97,6 +121,12 @@
         scrollTop: $( $(this).attr('href') ).offset().top}, 500);
         return false;
         });
+    </script>
+    
+    <script>
+        $(window).scroll(function(){
+    $("#landing").css("opacity", 1 - $(window).scrollTop() / 100);
+  });
     </script>
     
 </body>

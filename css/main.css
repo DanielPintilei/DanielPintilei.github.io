@@ -78,11 +78,18 @@ a:visited {
     padding: 0.3em;
 }
 #cvb:hover {
+    color: #FF4000;
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
     -webkit-transition:all 0.3s ease;
     transition:all 0.3s ease;
+}
+#cvb:visited {
+    color: #FF4000;    
+}
+#cvb:active {
+    color: #FF4000;    
 }
 #logo {
     width: 7em;

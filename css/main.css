@@ -85,6 +85,6 @@ a:visited {
     transition:all 0.3s ease;
 }
 #logo {
-    width: 7em;
+    width: 100px;
     margin-bottom: 18em;
 }

@@ -25,13 +25,13 @@ h2 {
     text-align: center;
 }
 ::-moz-selection {
-    background: #F5591B;
-    color: #090105;
+    background: transparent;
+    color: #FF4000;
     text-shadow: none;
 }
 ::selection {
-    background: #FF4000;
-    color: #090105;
+    background: transparent;
+    color: #FF4000;
     text-shadow: none;
 }
 a {  
@@ -53,7 +53,7 @@ a:visited {
 }
 .social {
     font-size: 1.5em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 #landing {
     background-image: url("/img/wreck.jpg");
@@ -66,11 +66,11 @@ a:visited {
 #citat {
     font-family: "Modeka";
     font-size: 3em;
-    color: #FF4000;
+    color: #333;
     margin: 2em;   
     text-align: center;
     display: block;
-    padding: 0.3em;
+    padding: 0.3em 3em;
 }
 #linkuri, #shpan {
     color: #222;   

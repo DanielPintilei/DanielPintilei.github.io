@@ -67,7 +67,7 @@ a:visited {
     font-family: "Modeka";
     font-size: 3em;
     color: #333;
-    margin: 2em;   
+    margin: 1em;   
     text-align: center;
     display: block;
     padding: 0.3em 3em;
@@ -77,6 +77,15 @@ a:visited {
 }
 footer {
     margin-bottom: 0.5em;   
+}
+#pfcv {
+    margin-bottom: 5em;
+}
+#pfcv a {
+    margin: 0 1em;
+}
+#pfcv a:hover {
+     opacity: 0.3;   
 }
 @media(max-width:767px){
     #citat {

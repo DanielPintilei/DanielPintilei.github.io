@@ -84,4 +84,7 @@ footer {
     margin: 1em;   
     padding: 0;
     }
+    footer {
+    margin-bottom: 3em;   
+}
 }

@@ -8,12 +8,24 @@ h1 {
     font-family: 'primiterus';
     font-size: 3em;
     font-weight: 700;
-    color: #FF4000;
+    background: #ff0900;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #ff0900), color-stop(21%, #ff4400), color-stop(74%, #614ca6), color-stop(100%, #737999));
+    background: -webkit-linear-gradient(left, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    background: linear-gradient(to right, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0900', endColorstr='#737999', GradientType=1 );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    /*color: #FF4000;*/
     margin-top: 1.5em;   
     text-align: center;
     display: inline-block;
     padding: 0.35em 0.3em 0.25em 0.3em;
-    border: 0.05em solid #FF4000;   
+    border: 0.05em solid transparent;
+    -webkit-border-image: -webkit-linear-gradient(left, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    -o-border-image: linear-gradient(to right, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    border-image: linear-gradient(to right, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    border-image-slice: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0900', endColorstr='#737999', GradientType=1 );
 }
 #titlu {
     display: block;
@@ -54,6 +66,7 @@ a:visited {
 .social {
     font-size: 1.5em;
     margin-bottom: 3em;
+    margin-top: 3em;
 }
 #landing {
     background-image: url("/img/wreck.jpg");
@@ -67,7 +80,7 @@ a:visited {
     font-family: "Modeka";
     font-size: 3em;
     color: #333;
-    margin: 1em;   
+    margin: 2em 1em;   
     text-align: center;
     display: block;
     padding: 0.3em 3em;
@@ -76,7 +89,7 @@ a:visited {
     color: #222;   
 }
 footer {
-    margin-bottom: 0.5em;   
+    margin-bottom: 5em;   
 }
 #pfcv {
     margin-bottom: 5em;
@@ -92,8 +105,8 @@ footer {
     font-size: 2.5em;
     margin: 1em;   
     padding: 0;
-    }
-    footer {
-    margin-bottom: 3em;   
+    }   
 }
+.construction {
+    margin: 10em;
 }

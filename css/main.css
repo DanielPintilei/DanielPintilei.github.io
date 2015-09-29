@@ -108,7 +108,15 @@ footer {
     font-size: 2.5em;
     margin: 1em;   
     padding: 0;
-    }   
+    }
+    #underc {
+         font-size: 2.5em;
+border: 0.08em solid transparent;
+    -webkit-border-image: -webkit-linear-gradient(left, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    -o-border-image: linear-gradient(to right, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    border-image: linear-gradient(to right, #ff0900 0%, #ff4400 21%, #614ca6 74%, #737999 100%);
+    border-image-slice: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0900', endColorstr='#737999', GradientType=1 );    }
 }
 .construction {
     margin: 10em 0;

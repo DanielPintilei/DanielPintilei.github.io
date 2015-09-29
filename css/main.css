@@ -68,6 +68,9 @@ a:visited {
     margin-bottom: 3em;
     margin-top: 3em;
 }
+.social a {
+    margin: 0 0.1em 0;
+}
 #landing {
     background-image: url("/img/wreck.jpg");
     background-position: center center;

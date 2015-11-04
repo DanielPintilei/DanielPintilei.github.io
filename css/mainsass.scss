@@ -1,3 +1,4 @@
+@import "_test";
 @font-face {
     font-family: primiterus;
     src: url("/fonts/primiterus.otf");
@@ -88,14 +89,9 @@ a:hover {
     font-size: 1.5em;
     margin-bottom: 2em;
     margin-top: 2em;
-}
-
-.social a {
-    margin: 0 0.07em 0;
-}
-
-#paper-plane-i {
-    font-size: 0.9em;
+    a {
+        margin: 0 0.07em 0;
+    }
 }
 
 #landing {

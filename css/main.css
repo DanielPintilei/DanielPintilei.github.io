@@ -1,110 +1,150 @@
 @font-face {
-  font-family: primiterus;
-  src: url("/fonts/primiterus.otf"); }
+    font-family: primiterus;
+    src: url("/fonts/primiterus.otf");
+}
 
 @font-face {
-  font-family: Modeka;
-  src: url("/fonts/Modeka.otf"); }
-
-body {
-  background: #010101;
-  font-family: 'Source Code Pro'; }
-
-h1 {
-  font-family: 'primiterus';
-  font-size: 3em;
-  font-weight: 700;
-  color: #FF4000;
-  margin-top: 1.5em;
-  text-align: center;
-  display: inline-block;
-  padding: 0.35em 0.3em 0.25em 0.3em;
-  border: 0.07em solid #FF4000; }
-
-#titlu {
-  display: block;
-  text-align: center; }
-
-h2 {
-  margin-bottom: 1em;
-  font-size: 1.2em;
-  text-align: center; }
+    font-family: Modeka;
+    src: url("/fonts/Modeka.otf");
+}
 
 ::-moz-selection {
-  background: transparent;
-  color: #FF4000;
-  text-shadow: none; }
+    background: transparent;
+    color: #ff001d;
+    text-shadow: none;
+}
 
 ::selection {
-  background: transparent;
-  color: #FF4000;
-  text-shadow: none; }
+    background: transparent;
+    color: #ff001d;
+    text-shadow: none;
+}
 
-a {
-  color: #FF4000;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
-
-a:active {
-  color: #333333; }
-
-a:visited {
-  color: #FF4000; }
-
-a:hover {
-  color: #333333; }
-
-.center {
-  text-align: center; }
-
-.social {
-  font-size: 1.5em;
-  margin-bottom: 2em;
-  margin-top: 2em; }
-
-.social a {
-  margin: 0 0.07em 0; }
-
-#paper-plane-i {
-  font-size: 0.9em; }
-
-.fa-codepen {
-  font-size: 0.9em;
-  position: relative;
-  bottom: 0.1em; }
+body {
+    background: #070418;
+    font-family: 'Source Code Pro';
+}
 
 #landing {
-  background-image: url("/img/wreck.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh; }
+    background-image: url("/img/wreck.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+#titlu {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 62em) {
+    #titlu {
+        margin-top: 1em;
+    }
+}
+
+h1 {
+    font-family: 'primiterus';
+    font-size: 3em;
+    font-weight: 700;
+    color: #ff001d;
+    margin-top: 1.5em;
+    text-align: center;
+    display: inline-block;
+    padding: 0.35em 0.3em 0.25em 0.3em;
+    border: 0.07em solid #ff001d;
+}
+
+h2 {
+    margin-bottom: 1em;
+    color: #38345c;
+    font-size: 1.2em;
+    text-align: center;
+}
 
 #citat {
-  font-family: "Modeka";
-  font-size: 3em;
-  color: #333;
-  margin: 2em 1em;
-  text-align: center;
-  display: block;
-  padding: 0.3em 3em; }
-
-#linkuri,
-#shpan {
-  color: #222; }
-
-footer {
-  margin-bottom: 2em; }
+    font-family: "Modeka";
+    font-size: 3em;
+    color: #38345c;
+    margin: 2em 1em;
+    text-align: center;
+    display: block;
+    padding: 0.3em 3em;
+}
 
 @media (max-width: 767px) {
-  #citat {
-    font-size: 2.5em;
-    margin: 0.5em;
-    padding: 0; }
-  social {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    margin-top: 1em; } }
+    #citat {
+        font-size: 2.5em;
+        margin: 0.5em;
+        padding: 0;
+    }
+}
 
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 62em) {
+    #citat {
+        font-size: 3.1em;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+}
+
+a {
+    color: #ff001d;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+a:active {
+    color: #38345c;
+}
+
+a:visited {
+    color: #ff001d;
+}
+
+a:hover {
+    color: #38345c;
+}
+
+.social {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+@media (max-width: 767px) {
+    .social {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+}
+
+.social a {
+    margin: 0 0.07em 0;
+}
+
+.fa-paper-plane {
+    font-size: 0.9em;
+}
+
+.fa-codepen {
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0.09em;
+}
+
+.shpan {
+    color: #38345c;
+}
+
+footer {
+    margin-bottom: 2em;
+    color: #38345c;
+}
+
+footer a:visited {
+    color: #38345c;
+}

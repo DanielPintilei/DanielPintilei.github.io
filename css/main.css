@@ -10,13 +10,13 @@
 
 ::-moz-selection {
     background: transparent;
-    color: #ff001d;
+    color: #ee143c;
     text-shadow: none;
 }
 
 ::selection {
     background: transparent;
-    color: #ff001d;
+    color: #ee143c;
     text-shadow: none;
 }
 
@@ -49,12 +49,12 @@ h1 {
     font-family: 'primiterus';
     font-size: 3em;
     font-weight: 700;
-    color: #ff001d;
+    color: #ee143c;
     margin-top: 1.5em;
     text-align: center;
     display: inline-block;
     padding: 0.35em 0.3em 0.25em 0.3em;
-    border: 0.07em solid #ff001d;
+    border: 0.07em solid #ee143c;
 }
 
 h2 {
@@ -91,7 +91,7 @@ h2 {
 }
 
 a {
-    color: #ff001d;
+    color: #ee143c;
     -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
@@ -101,7 +101,7 @@ a:active {
 }
 
 a:visited {
-    color: #ff001d;
+    color: #ee143c;
 }
 
 a:hover {

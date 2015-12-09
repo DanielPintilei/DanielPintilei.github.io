@@ -47,6 +47,7 @@ h1 {
     color: $primary-color;
     margin-top: 1.5em;
     text-align: center;
+    cursor: default;
     display: inline-block;
     padding: 0.35em 0.3em 0.25em 0.3em;
     border: 0.07em solid $primary-color;
@@ -57,6 +58,7 @@ h2 {
     color: $foreground-color;
     font-size: 1.2em;
     text-align: center;
+    cursor: default;
 }
 
 #citat {
@@ -67,6 +69,7 @@ h2 {
     text-align: center;
     display: block;
     padding: 0.3em 3em;
+    cursor: default;
     @media(max-width: 767px) {
         font-size: 2.5em;
         margin: 0.5em;
@@ -81,7 +84,6 @@ h2 {
 
 a {
     color: $primary-color;
-    -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
     &:active {
         color: $foreground-color;
@@ -98,6 +100,7 @@ a {
     font-size: 1.5em;
     margin-bottom: 2em;
     margin-top: 2em;
+    cursor: default;
     @media(max-width: 767px) {
         font-size: 1.5em;
         margin-bottom: 1em;

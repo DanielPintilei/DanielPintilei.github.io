@@ -102,11 +102,11 @@ a {
   font-size: 0.9em; }
 
 .shpan {
-  color: #38345c;
-  cursor: default; }
+  color: #38345c; }
 
 footer {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  cursor: default; }
   footer a {
     color: #38345c; }
     footer a:visited,

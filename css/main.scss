@@ -126,11 +126,11 @@ a {
 
 .shpan {
     color: $foreground-color;
-    cursor: default;
 }
 
 footer {
     margin-bottom: 2em;
+    cursor: default;
     a {
         color: $foreground-color;
         &:visited,

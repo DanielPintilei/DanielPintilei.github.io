@@ -115,6 +115,7 @@ a {
     font-size: 0.9em;
 }
 
+
 /*
 .fa-codepen {
     font-size: 0.9em;
@@ -129,8 +130,10 @@ a {
 
 footer {
     margin-bottom: 2em;
-    color: $foreground-color;
-    a:visited {
-        color: $foreground-color !important;
+    a {
+        color: $foreground-color;
+        &:visited {
+            color: $foreground-color;
+        }
     }
 }

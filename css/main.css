@@ -75,15 +75,8 @@ h2 {
       margin-bottom: 4em; } }
 
 a {
-  color: #ee143c;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear; }
-  a:active {
-    color: #38345c; }
-  a:visited {
-    color: #ee143c; }
-  a:hover {
-    color: #38345c; }
 
 .social {
   font-size: 1.5em;
@@ -96,7 +89,14 @@ a {
       margin-bottom: 1em;
       margin-top: 1em; } }
   .social a {
-    margin: 0 0.07em 0; }
+    margin: 0 0.07em 0;
+    color: #ee143c; }
+    .social a:active {
+      color: #38345c; }
+    .social a:visited {
+      color: #ee143c; }
+    .social a:hover {
+      color: #38345c; }
 
 .fa-paper-plane {
   font-size: 0.9em; }
@@ -108,4 +108,4 @@ footer {
   margin-bottom: 2em;
   color: #38345c; }
   footer a:visited {
-    color: #38345c; }
+    color: #38345c !important; }

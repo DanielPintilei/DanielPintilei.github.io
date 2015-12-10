@@ -83,17 +83,7 @@ h2 {
 }
 
 a {
-    color: $primary-color;
     transition: all 0.2s linear;
-    &:active {
-        color: $foreground-color;
-    }
-    &:visited {
-        color: $primary-color;
-    }
-    &:hover {
-        color: $foreground-color;
-    }
 }
 
 .social {
@@ -108,6 +98,16 @@ a {
     }
     a {
         margin: 0 0.07em 0;
+        color: $primary-color;
+        &:active {
+            color: $foreground-color;
+        }
+        &:visited {
+            color: $primary-color;
+        }
+        &:hover {
+            color: $foreground-color;
+        }
     }
 }
 
@@ -131,6 +131,6 @@ footer {
     margin-bottom: 2em;
     color: $foreground-color;
     a:visited {
-        color: $foreground-color;
+        color: $foreground-color !important;
     }
 }

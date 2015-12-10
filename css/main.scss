@@ -132,7 +132,8 @@ footer {
     margin-bottom: 2em;
     a {
         color: $foreground-color;
-        &:visited {
+        &:visited,
+        &:hover {
             color: $foreground-color;
         }
     }

@@ -108,5 +108,6 @@ footer {
   margin-bottom: 2em; }
   footer a {
     color: #38345c; }
-    footer a:visited {
+    footer a:visited,
+    footer a:hover {
       color: #38345c; }

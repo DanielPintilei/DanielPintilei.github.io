@@ -35,7 +35,7 @@ body {
 #titlu {
     display: block;
     text-align: center;
-    @media(min-width: 62em) {
+    @media(min-width: 1367px) {
         margin-top: 1em;
     }
 }
@@ -75,7 +75,7 @@ h2 {
         margin: 0.5em;
         padding: 0;
     }
-    @media(min-width:62em) {
+    @media(min-width: 1367px) {
         font-size: 3.1em;
         margin-top: 4em;
         margin-bottom: 4em;

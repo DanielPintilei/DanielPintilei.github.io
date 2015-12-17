@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box; }
+
+.bag {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; }
+
+.bag.fluid {
+  margin: 0 auto; }
+
 @font-face {
   font-family: primiterus;
   src: url("/fonts/primiterus.otf"); }
@@ -6,19 +17,15 @@
   font-family: Modeka;
   src: url("/fonts/Modeka.otf"); }
 
-::-moz-selection {
-  background: transparent;
-  color: #ee143c;
-  text-shadow: none; }
-
-::selection {
-  background: transparent;
-  color: #ee143c;
-  text-shadow: none; }
-
 body {
+  margin: 0;
   background: #070418;
-  font-family: 'Source Code Pro'; }
+  font-family: 'Source Code Pro';
+  font-size: 14px;
+  line-height: 1.42857143; }
+
+.text-center {
+  text-align: center; }
 
 #landing {
   background-image: url("/img/wreck.jpg");
@@ -33,7 +40,12 @@ body {
   text-align: center; }
   @media (min-width: 1367px) {
     #titlu {
-      margin-top: 1em; } }
+      padding-top: 1em; } }
+
+h1,
+h2 {
+  line-height: 1.1;
+  margin: 0.67em 0; }
 
 h1 {
   font-family: 'primiterus';
@@ -51,7 +63,7 @@ h2 {
   margin-bottom: 1em;
   color: #38345c;
   font-size: 1.2em;
-  text-align: center;
+  font-weight: 400;
   cursor: default; }
 
 #citat {
@@ -75,6 +87,7 @@ h2 {
       margin-bottom: 4em; } }
 
 a {
+  text-decoration: none;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
@@ -109,6 +122,20 @@ footer {
   cursor: default; }
   footer a {
     color: #38345c; }
-    footer a:visited,
-    footer a:hover {
+    footer a:visited {
       color: #38345c; }
+    footer a:hover {
+      text-decoration: underline;
+      color: #38345c; }
+
+::-moz-selection {
+  background: transparent;
+  color: #ee143c;
+  text-shadow: none; }
+
+::selection {
+  background: transparent;
+  color: #ee143c;
+  text-shadow: none; }
+
+/*# sourceMappingURL=main.css.map */

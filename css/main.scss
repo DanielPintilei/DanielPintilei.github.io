@@ -2,6 +2,21 @@ $background-color: #070418;
 $foreground-color: #38345c;
 //$primary-color: #ff001d;
 $primary-color: #ee143c;
+* {
+    box-sizing: border-box;
+}
+
+.bag {
+    margin-left: auto;
+    margin-right: auto;
+    //    padding: 15px;
+    box-sizing: border-box
+}
+
+.bag.fluid {
+    margin: 0 auto
+}
+
 @font-face {
     font-family: primiterus;
     src: url("/fonts/primiterus.otf");
@@ -12,15 +27,16 @@ $primary-color: #ee143c;
     src: url("/fonts/Modeka.otf");
 }
 
-::selection {
-    background: transparent;
-    color: $primary-color;
-    text-shadow: none;
-}
-
 body {
+    margin: 0;
     background: $background-color;
     font-family: 'Source Code Pro';
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.text-center {
+    text-align: center;
 }
 
 #landing {
@@ -36,8 +52,15 @@ body {
     display: block;
     text-align: center;
     @media(min-width: 1367px) {
-        margin-top: 1em;
+        padding-top: 1em;
     }
+}
+
+h1,
+h2,
+{
+    line-height: 1.1;
+    margin: 0.67em 0;
 }
 
 h1 {
@@ -57,7 +80,7 @@ h2 {
     margin-bottom: 1em;
     color: $foreground-color;
     font-size: 1.2em;
-    text-align: center;
+    font-weight: 400;
     cursor: default;
 }
 
@@ -83,6 +106,8 @@ h2 {
 }
 
 a {
+    text-decoration: none;
+    -webkit-transition: all 0.2s linear;
     transition: all 0.2s linear;
 }
 
@@ -116,13 +141,7 @@ a {
 }
 
 
-/*
-.fa-codepen {
-    font-size: 0.9em;
-    position: relative;
-    bottom: 0.09em;
-}
-*/
+//.fa-codepen { font-size: 0.9em; position: relative; bottom: 0.09em; }
 
 .shpan {
     color: $foreground-color;
@@ -133,9 +152,24 @@ footer {
     cursor: default;
     a {
         color: $foreground-color;
-        &:visited,
+        &:visited {
+            color: $foreground-color;
+        }
         &:hover {
+            text-decoration: underline;
             color: $foreground-color;
         }
     }
+}
+
+::-moz-selection {
+    background: transparent;
+    color: $primary-color;
+    text-shadow: none;
+}
+
+::selection {
+    background: transparent;
+    color: $primary-color;
+    text-shadow: none;
 }

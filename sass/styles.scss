@@ -1,0 +1,200 @@
+// @import "../bower_components/bootstrap/scss/bootstrap-reboot";
+// @import "../bower_components/bootstrap/scss/bootstrap-grid";
+@import "mixins";
+@import "utilities";
+@import "variables";
+// @import "../bower_components/bootstrap/scss/type";
+// @import "../bower_components/animate-sass/animate";
+// Typesettings
+// $font-sans: 'Sintony', Helvetica, Arial, sans-serif;
+// $font-serif: Georgia, 'Times New Roman', serif;
+// $font-mono: 'Lucida Console', Monaco, monospace;
+// $text-color: #fff;
+// $base-vertical-unit: 6px;
+// $base-line-multi: 4;
+// $base-font-size: 16px;
+// $ms-ratio: 1.414;
+// $paragraph-indent: false;
+// $paragraph-justify: true;
+// $load-typesetted: true;
+// @import "../bower_components/typesettings/typesettings";
+$background-color: #070418;
+$foreground-color: #38345c;
+//$primary-color: #ff001d;
+$primary-color: #ee143c;
+* {
+  box-sizing: border-box;
+}
+.bag {
+  //    padding: 15px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+}
+.bag.fluid {
+  margin: 0 auto;
+}
+@font-face {
+  font-family: primiterus;
+
+  src: url(/fonts/primiterus.otf);
+}
+@font-face {
+  font-family: Modeka;
+
+  src: url(/fonts/Modeka.otf);
+}
+body {
+  margin: 0;
+
+  background: $background-color;
+
+  font-family: 'Source Code Pro';
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.text-center {
+  text-align: center;
+}
+#landing {
+  height: 100vh;
+
+  background-image: url(/img/wreck.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+#titlu {
+  display: block;
+
+  text-align: center;
+  @media(min-width: 1367px) {
+    padding-top: 1em;
+  }
+}
+h1,
+h2,
+ {
+  margin: 0.67em 0;
+
+  line-height: 1.1;
+}
+h1 {
+  display: inline-block;
+
+  margin-top: 1.5em;
+  padding: 0.35em 0.3em 0.25em;
+
+  cursor: default;
+  text-align: center;
+
+  color: $primary-color;
+  border: 0.07em solid $primary-color;
+
+  font-family: 'primiterus';
+  font-size: 3em;
+  font-weight: 700;
+}
+h2 {
+  margin-bottom: 1em;
+
+  cursor: default;
+
+  color: $foreground-color;
+
+  font-size: 1.2em;
+  font-weight: 400;
+}
+#citat {
+  display: block;
+
+  margin: 2em 1em;
+  padding: 0.3em 3em;
+
+  cursor: default;
+  text-align: center;
+
+  color: $foreground-color;
+
+  font-family: "Modeka";
+  font-size: 3em;
+  @media(max-width: 767px) {
+    margin: 0.5em;
+    padding: 0;
+
+    font-size: 2.5em;
+  }
+  @media(min-width: 1367px) {
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+    font-size: 3.1em;
+  }
+}
+a {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+.social {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  cursor: default;
+
+  font-size: 1.5em;
+  @media(max-width: 767px) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    font-size: 1.5em;
+  }
+  a {
+    margin: 0 0.07em;
+
+    color: $primary-color;
+    &:active {
+      color: $foreground-color;
+    }
+    &:visited {
+      color: $primary-color;
+    }
+    &:hover {
+      color: $foreground-color;
+    }
+  }
+}
+.fa-paper-plane {
+  font-size: 0.9em;
+}
+//.fa-codepen { font-size: 0.9em; position: relative; bottom: 0.09em; }
+.shpan {
+  color: $foreground-color;
+}
+footer {
+  margin-bottom: 2em;
+
+  cursor: default;
+  a {
+    color: $foreground-color;
+    &:visited {
+      color: $foreground-color;
+    }
+    &:hover {
+      text-decoration: underline;
+
+      color: $foreground-color;
+    }
+  }
+}
+ ::-moz-selection {
+  color: $primary-color;
+  background: transparent;
+  text-shadow: none;
+}
+ ::selection {
+  color: $primary-color;
+  background: transparent;
+  text-shadow: none;
+}

@@ -1,0 +1,472 @@
+/* --------------------------------
+codyhouse vertical-fixed-navigation-2
+-------------------------------- */
+/* --------------------------------
+Navigation trigger - visible on small devices only
+-------------------------------- */
+.cd-nav-trigger {
+  position: fixed;
+  z-index: 2;
+  top: 30px;
+  right: 5%;
+
+  display: block;
+
+  width: 44px;
+  height: 44px;
+  /* reset button style */
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0.25em;
+  outline: none;
+  background: $color-background2;
+  // background: transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.cd-nav-trigger span {
+  /* central dot */
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+
+  width: 4px;
+  height: 4px;
+
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  border-radius: 50%;
+  background-color: $color-background;
+}
+.cd-nav-trigger span::before,
+.cd-nav-trigger span::after {
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  /* bottom and top dots */
+
+  content: '';
+
+  border-radius: inherit;
+  background-color: $color-background;
+}
+.cd-nav-trigger span::before {
+  top: -9px;
+}
+.cd-nav-trigger span::after {
+  bottom: -9px;
+}
+@media only screen and (min-width: 800px) {
+  .cd-nav-trigger {
+    display: none;
+  }
+}
+/* --------------------------------
+Vertical navigation
+-------------------------------- */
+.cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  right: 5%;
+
+  overflow-y: auto;
+
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+
+  border-radius: 0.25em;
+  background-color: $color-background2;
+}
+.cd-vertical-nav a {
+  display: block;
+
+  padding: 1em;
+
+  color: $color-background;
+  border-bottom: 1px solid rgba(58, 44, 65, 0.1);
+
+  font-size: 1.4em;
+  font-weight: bold;
+  &:hover {
+    color: $color-highlight;
+  }
+}
+.cd-vertical-nav a.active {
+  color: $color-highlight;
+  &:hover {
+    color: $color-highlight;
+  }
+}
+.cd-vertical-nav a.active span {
+  color: $color-highlight;
+}
+.cd-vertical-nav.open {
+  -webkit-overflow-scrolling: touch;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.cd-vertical-nav.open + .cd-nav-trigger {
+  background-color: transparent;
+}
+.cd-vertical-nav.open + .cd-nav-trigger span {
+  background-color: rgba(58, 44, 65, 0);
+}
+.cd-vertical-nav.open + .cd-nav-trigger span::before,
+.cd-vertical-nav.open + .cd-nav-trigger span::after {
+  left: -8px;
+
+  width: 20px;
+  /* transform dots in 'X' icon */
+  height: 3px;
+
+  border-radius: 0;
+}
+.cd-vertical-nav.open + .cd-nav-trigger span::before {
+  top: 1px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-vertical-nav.open + .cd-nav-trigger span::after {
+  bottom: 0;
+
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+@media only screen and (min-width: 800px) {
+  .cd-vertical-nav {
+    top: 0;
+    /* reset style */
+    right: 0;
+    bottom: auto;
+    /* vertically align its content*/
+
+    display: table;
+
+    width: 90px;
+    max-width: none;
+    height: 100vh;
+    max-height: none;
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+
+    background-color: transparent;
+  }
+  .cd-vertical-nav::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    /* this is the navigation background */
+
+    content: '';
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+
+    background: $navbar-bg;
+  }
+  .no-touch .cd-vertical-nav:hover::before,
+  .touch .cd-vertical-nav::before {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-vertical-nav ul {
+    /* vertically align <ul> inside <nav>*/
+    display: table-cell;
+
+    text-align: center;
+    vertical-align: middle;
+  }
+  .cd-vertical-nav a {
+    position: relative;
+
+    margin: 1.4em auto;
+    padding: 3em 0 0;
+
+    color: $color-main-light;
+    border-bottom: none;
+
+    font-size: 1.2rem;
+  }
+  .cd-vertical-nav a.active {
+    color: $color-main-light;
+  }
+  .cd-vertical-nav a::before,
+  .cd-vertical-nav a::after {
+    position: absolute;
+    left: 50%;
+    /* used to create the filled circle and the background icon */
+
+    content: '';
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    /* Force Hardware Acceleration */
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .cd-vertical-nav a::before {
+    /* filled circle */
+    top: 0;
+
+    width: 32px;
+    height: 32px;
+
+    -webkit-transition: -webkit-transform 0.4s, background-color 0.2s;
+    -moz-transition: -moz-transform 0.4s, background-color 0.2s;
+    transition: transform 0.4s, background-color 0.2s;
+    -webkit-transform: translateX(-50%) scale(0.25);
+    -moz-transform: translateX(-50%) scale(0.25);
+    -ms-transform: translateX(-50%) scale(0.25);
+    -o-transform: translateX(-50%) scale(0.25);
+    transform: translateX(-50%) scale(0.25);
+
+    border-radius: 50%;
+    background: $color-main-light;
+  }
+  .cd-vertical-nav a::after {
+    top: 8px;
+
+    width: 16px;
+    height: 16px;
+
+    -webkit-transition: -webkit-transform 0.4s 0s, opacity 0.1s 0.3s;
+    -moz-transition: -moz-transform 0.4s 0s, opacity 0.1s 0.3s;
+    transition: transform 0.4s 0s, opacity 0.1s 0.3s;
+    -webkit-transform: translateX(-50%) scale(0);
+    -moz-transform: translateX(-50%) scale(0);
+    -ms-transform: translateX(-50%) scale(0);
+    -o-transform: translateX(-50%) scale(0);
+    transform: translateX(-50%) scale(0);
+    /* icon */
+
+    opacity: 0;
+    background: url(../img/cd-nav-icons.svg) no-repeat;
+  }
+  .cd-vertical-nav a.active::before,
+  .no-touch .cd-vertical-nav a:hover::before {
+    background-color: $color-highlight;
+  }
+  .cd-vertical-nav li:first-of-type a::after {
+    /* fix bug with transitions - set scale(0.01) rather than scale(0) */
+    -webkit-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+    -moz-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+    -ms-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+    -o-transform: translateX(-50%) translateY(4.5em) scale(0.01);
+    transform: translateX(-50%) translateY(4.5em) scale(0.01);
+    /* change icon using image sprites */
+
+    background-position: 0 -48px;
+  }
+  .cd-vertical-nav li:first-of-type a::before {
+    -webkit-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+    -moz-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+    -ms-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+    -o-transform: translateX(-50%) translateY(4.5em) scale(0.25);
+    transform: translateX(-50%) translateY(4.5em) scale(0.25);
+  }
+  .cd-vertical-nav li:nth-of-type(2) a::after {
+    -webkit-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+    -moz-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+    -ms-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+    -o-transform: translateX(-50%) translateY(1.5em) scale(0.01);
+    transform: translateX(-50%) translateY(1.5em) scale(0.01);
+
+    background-position: 0 -32px;
+  }
+  .cd-vertical-nav li:nth-of-type(2) a::before {
+    -webkit-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+    -moz-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+    -ms-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+    -o-transform: translateX(-50%) translateY(1.5em) scale(0.25);
+    transform: translateX(-50%) translateY(1.5em) scale(0.25);
+  }
+  .cd-vertical-nav li:nth-of-type(3) a::after {
+    -webkit-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+    -moz-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+    -ms-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+    -o-transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+    transform: translateX(-50%) translateY(-1.5em) scale(0.01);
+
+    background-position: 0 -16px;
+  }
+  .cd-vertical-nav li:nth-of-type(3) a::before {
+    -webkit-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+    -moz-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+    -ms-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+    -o-transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+    transform: translateX(-50%) translateY(-1.5em) scale(0.25);
+  }
+  .cd-vertical-nav li:nth-of-type(4) a::after {
+    -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+    -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+    -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+    -o-transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+    transform: translateX(-50%) translateY(-4.5em) scale(0.01);
+
+    background-position: 0 0;
+  }
+  .cd-vertical-nav li:nth-of-type(4) a::before {
+    -webkit-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+    -moz-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+    -ms-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+    -o-transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+    transform: translateX(-50%) translateY(-4.5em) scale(0.25);
+  }
+  .cd-vertical-nav .label {
+    display: block;
+
+    transition: transform 0.4s;
+    transform: translateZ(0);
+    transform: translateX(100%);
+
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    /* Force Hardware Acceleration */
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .no-touch .cd-vertical-nav:hover a::before,
+  .no-touch .cd-vertical-nav:hover a::after,
+  .touch .cd-vertical-nav li:nth-of-type(n) a::before,
+  .touch .cd-vertical-nav li:nth-of-type(n) a::after {
+    -webkit-transform: translateX(-50%) scale(1);
+    -moz-transform: translateX(-50%) scale(1);
+    /* set a rotation to fix bug on Firefox - http://gielberkers.com/how-to-fix-shaking-css-transitions-in-firefox/ */
+    -moz-transform: translateX(-50%) scale(1) rotate(0.02deg);
+    -ms-transform: translateX(-50%) scale(1);
+    -o-transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1);
+  }
+  .no-touch .cd-vertical-nav:hover a::after,
+  .touch .cd-vertical-nav a::after {
+    -webkit-transition: -webkit-transform 0.4s, opacity 0s;
+    -moz-transition: -moz-transform 0.4s, opacity 0s;
+    transition: transform 0.4s, opacity 0s;
+
+    opacity: 1;
+  }
+  .no-touch .cd-vertical-nav:hover .label,
+  .touch .cd-vertical-nav .label {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/* --------------------------------
+no-js
+-------------------------------- */
+.no-js .cd-nav-trigger {
+  display: none;
+}
+.no-js .cd-vertical-nav {
+  position: static;
+
+  width: 100%;
+  max-width: none;
+  height: auto;
+
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.no-js .cd-vertical-nav::before {
+  display: none;
+}
+.no-js .cd-vertical-nav ul::after {
+  display: table;
+  clear: both;
+
+  content: "";
+}
+.no-js .cd-vertical-nav li {
+  display: inline-block;
+  float: left;
+}
+.no-js .cd-vertical-nav a {
+  margin: 1.5em 1em;
+  padding: 0 1em;
+
+  color: $color-main-light;
+}
+.no-js .cd-vertical-nav a.active {
+  color: $color-highlight;
+}
+.no-js .cd-vertical-nav a::after,
+.no-js .cd-vertical-nav a::before {
+  display: none;
+}
+.no-js .cd-vertical-nav .label {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}

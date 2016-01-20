@@ -16,13 +16,12 @@ var data = require('gulp-data');
 var notify = require("gulp-notify");
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
-var preen = require('preen');
 var runSequence = require('run-sequence');
 
 gulp.task('html', function() {
   var options = {
     ignorePartials: false,
-    batch: ['hbs/partials']
+    batch: ['./hbs/partials/']
   };
 
   return gulp.src("hbs/*.hbs")
@@ -35,7 +34,7 @@ gulp.task('html', function() {
     .pipe(rename({
       extname: '.html'
     }))
-    .pipe(gulp.dest("/"));
+    .pipe(gulp.dest("./"));
 });
 
 gulp.task('css', function() {
@@ -82,13 +81,13 @@ gulp.task('default', function() {
 });
 
 gulp.task('minhtml', function() {
-  gulp.src(['index.html'])
+  gulp.src(['./*.html'])
     .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true,
       removeEmptyAttributes: true
     }))
-    .pipe(gulp.dest('/'));
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('mincss', function() {
@@ -125,5 +124,5 @@ gulp.task('done', function() {
 });
 
 gulp.task('generate', function(cb) {
-  runSequence(['mincss', 'minjs'], 'minhtml', 'minimg', 'done', cb);
+  runSequence('minhtml', 'mincss', 'minjs', 'minimg', 'done', cb);
 });

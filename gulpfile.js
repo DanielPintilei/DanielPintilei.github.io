@@ -123,6 +123,6 @@ gulp.task('done', function() {
     .pipe(notify("Finished generating your static site!"));
 });
 
-gulp.task('generate', function(cb) {
+gulp.task('build', function(cb) {
   runSequence('minhtml', 'mincss', 'minjs', 'minimg', 'done', cb);
 });

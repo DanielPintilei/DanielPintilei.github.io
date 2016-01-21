@@ -18,42 +18,7 @@
 // $paragraph-justify: true;
 // $load-typesetted: true;
 // @import "../bower_components/typesettings/typesettings";
-* {
-  box-sizing: border-box;
-}
-.bag {
-  //    padding: 15px;
-  box-sizing: border-box;
-  margin-right: auto;
-  margin-left: auto;
-}
-.bag.fluid {
-  margin: 0 auto;
-}
-@font-face {
-  font-family: primiterus;
-
-  src: url(/fonts/primiterus.otf);
-}
-@font-face {
-  font-family: Modeka;
-
-  src: url(/fonts/Modeka.otf);
-}
-body {
-  margin: 0;
-
-  background: $background-color;
-
-  font-family: 'Source Code Pro';
-  font-size: 14px;
-  line-height: 1.42857143;
-}
- ::selection {
-  color: $primary-color;
-  background: transparent;
-  text-shadow: none;
-}
+@import "partials/base";
 @import "partials/header";
-@import "partials/navbar";
+// @import "partials/navbar";
 @import "partials/landing";

@@ -80,6 +80,9 @@ footer {
   margin-bottom: 2em;
 
   cursor: default;
+  span {
+    color: $foreground-color;
+  }
   a {
     color: $foreground-color;
     &:visited {

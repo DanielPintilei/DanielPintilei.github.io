@@ -3,22 +3,5 @@
 @import "mixins";
 @import "utilities";
 @import "variables";
-// @import "../bower_components/bootstrap/scss/type";
-// @import "../bower_components/animate-sass/animate";
-// Typesettings
-// $font-sans: 'Sintony', Helvetica, Arial, sans-serif;
-// $font-serif: Georgia, 'Times New Roman', serif;
-// $font-mono: 'Lucida Console', Monaco, monospace;
-// $text-color: #fff;
-// $base-vertical-unit: 6px;
-// $base-line-multi: 4;
-// $base-font-size: 16px;
-// $ms-ratio: 1.414;
-// $paragraph-indent: false;
-// $paragraph-justify: true;
-// $load-typesetted: true;
-// @import "../bower_components/typesettings/typesettings";
 @import "partials/base";
-@import "partials/header";
-// @import "partials/navbar";
 @import "partials/landing";

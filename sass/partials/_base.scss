@@ -8,7 +8,7 @@ body {
   font-size: 14px;
 }
 .container {
-  //    padding: 15px;
+  // padding: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -16,11 +16,31 @@ body {
   margin: 0 auto;
 }
 @font-face {
-  font-family: Modeka;
-  src: url("/fonts/Modeka.otf");
+  font-family: KlinicLight;
+  src: url("/fonts/KlinicSlabLight.otf");
+}
+@font-face {
+  font-family: KlinicLightIt;
+  src: url("/fonts/KlinicSlabLightIt.otf");
+}
+@font-face {
+  font-family: KlinicBook;
+  src: url("/fonts/KlinicSlabBook.otf");
+}
+@font-face {
+  font-family: KlinicBookIt;
+  src: url("/fonts/KlinicSlabBookIt.otf");
+}
+@font-face {
+  font-family: KlinicBold;
+  src: url("/fonts/KlinicSlabBold.otf");
+}
+@font-face {
+  font-family: KlinicBoldItalic;
+  src: url("/fonts/KlinicSlabBoldIt.otf");
 }
  ::selection {
-  color: $c1;
+  color: $c0;
   background: transparent;
   text-shadow: none;
 }

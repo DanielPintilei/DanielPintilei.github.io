@@ -1,143 +1,230 @@
-#landing {
-  height: 100vh;
-  background-color: $bg;
-  background: linear-gradient(40deg, $bg, $fg);
-  background-size: 100% 100%;
-  border: 1.4em solid $bg;
+.top-border {
+  position: fixed;
+  width: 100%;
+  height: $border;
+  background-color: $fg;
 }
-.titlu {
-  text-align: center;
-  // @media(min-width: 1367px) {
-  //   padding-top: 1em;
-  // }
+.logo {
+  position: fixed;
+  top: $border*2;
+  left: $border*2;
+  width: 3em;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
-.titlu h1 {
-  margin: 0.67em 0;
-  line-height: 1.1;
-  display: inline-block;
-  margin-top: 1.5em;
-  margin-bottom: 0;
-  padding: 0.45em 0.5em 0.25em;
-  cursor: default;
-  text-align: center;
-  color: $c1;
-  border-radius: 4px;
-  font-family: 'Josefin Slab', serif;
-  font-size: 4em;
-  // @media(min-width: 700px) {
-  //   position: relative;
-  //   right: 2em;
-  //   bottom: 0.7em;
-  // }
+.menu {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  width: $border*3.2;
+  height: $border*3.2;
+  background-color: $fg;
+  div {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 2.1em;
+    margin: $border;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
-h2 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.2em;
-  color: $c1;
-  margin-bottom: 6em;
+.menu-bg {
+  transition: all 0.4s ease-in-out-cubic;
+  background-color: $c01;
+}
+#menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: $border solid $c01;
+  background-color: rgba($bg, 0.5);
+}
+#menu-wrapper {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  ul {
+    width: 100%;
+    font-family: $font2;
+    font-weight: 700;
+    @include list-unstyled;
+    li {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 2.8rem;
+      a {
+        color: $c0;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  img {
+    width: 12rem;
+  }
 }
 .social {
-  margin-top: 4em;
-  margin-bottom: 5em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 523px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $border*4;
   cursor: default;
-  font-size: 1.5em;
-  // @media(max-width: 767px) {
-  //   margin-top: 1em;
-  //   margin-bottom: 1em;
-  //   font-size: 1.5em;
-  // }
+  font-size: responsive 0.8rem 1.4rem;
+  @media(max-width: 700px) {
+    margin: 0 2rem 4rem;
+  }
   i {
-    padding-top: 0.25em;
-    font-size: 1.4em;
+    padding-top: 1em;
+    font-size: 1.8rem;
   }
   a {
-    margin: 0 0.07em;
-    color: $fg;
+    margin: 0 0.78rem;
+    color: $c01;
+    &:nth-child(1) {
+      margin: 0;
+      margin-right: 0.78rem;
+    }
+    &:nth-child(8) {
+      margin: 0;
+      margin-left: 0.78rem;
+    }
     &:active {
-      color: $fg;
+      color: $c01;
     }
     &:visited {
-      color: $fg;
+      color: $c01;
     }
     &:hover {
-      color: rgba($fg, 0.6);
+      color: $fg;
     }
   }
 }
-.square {
-  display: inline-block;
-  width: 4em;
-  height: 4em;
-  margin-bottom: 0.8em;
-  padding: 1em;
+.hide {
+  display: none;
+}
+#landing {
+  min-height: 100vh;
+  border: $border solid $fg;
+  border-top: none;
+  border-bottom: none;
   background-color: $bg;
 }
-footer {
-  margin-bottom: 2em;
+.titlu {
+  padding: 1.4rem 0;
+  max-width: 523px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $c0;
   cursor: default;
-  position: static;
-  // @media(min-width: 700px) {
-  //   position: fixed;
-  //   bottom: 0;
-  //   left: 75%;
-  //   margin-left: -25%;
-  // }
-  span {
-    color: $c1;
+  @media(max-width: 950px) {
+    padding: 1.4rem 2rem 0;
   }
-  a {
-    color: $c1;
-    &:visited {
-      color: $c1;
-    }
-    &:hover {
-      text-decoration: underline;
-      color: $c1;
+  h1 {
+    margin-top:12rem;
+    font-family: $font1;
+    font-size: responsive 2.4rem 5rem;
+    font-weight: 700;
+    font-range: 300px 1280px;
+    text-align: justify;
+    @media(max-width: 950px) {
+      margin-top: 8rem;
     }
   }
+  h3 {
+    font-size: responsive 1.2rem 1.8rem;
+    font-family: $font2it;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-family: $font4;
+    padding-left: 0;
+    font-size: responsive 0.8rem 1.2rem;
+    font-weight: 400;
+  }
 }
-.footer-links {
-  margin-bottom: 2.1em;
+// .a {
+//   line-height: 2;
+// }
+.bottom-border {
+  position: fixed;
+  width: 100%;
+  height: $border;
+  background-color: $fg;
+  bottom: 0;
 }
-// @media(min-width: 700px) {
-// #twitter {
-//   position: absolute;
-//   top: 30%;
-//   left: 20%;
+// .titlu {
+//   display: flex;
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+//   align-items: center;
+//   justify-content: center;
+//   h1 {
+//     display: block;
+//     max-width: 750px;
+//     margin-top: 2.4rem;
+//     padding: 2rem;
+//     cursor: default;
+//     text-align: justify;
+//     color: $c0;
+//     font-family: $mainfontit, serif;
+//     font-size: responsive 2em 2.8em;
+//     font-weight: 700;
+//     font-range: 420px 1280px;
+//     @media(max-width: 700px) {
+//       text-align: left;
+//     }
+//     span {
+//       float: right;
+//       font-family: $font2;
+//       font-size: responsive 0.5em 0.7em;
+//       font-weight: normal;
+//       font-style: normal;
+//       font-range: 700px 1280px;
+//     }
+//   }
 // }
-// #instagram {
-//   position: absolute;
-//   top: 50%;
-//   left: 10%;
+// #quote {
+//   position: relative;
+//   top: -10rem;
+//   left: 2rem;
+//   float: left;
+//   color: rgba($c0, 0.1);
+//   font-family: $mainfont, serif;
+//   font-size: 6em;
+//   font-weight: 700;
+//   @media(max-width: 400px) {
+//     display: none;
+//   }
 // }
-// #pinterest {
-//   position: absolute;
-//   top: 60%;
-//   left: 30%;
-// }
-// #behance {
-//   position: absolute;
-//   top: 35%;
-//   left: 38%;
-// }
-// #codepen {
-//   position: absolute;
-//   top: 45%;
-//   left: 52%;
-// }
-// #github {
-//   position: absolute;
-//   top: 50%;
-//   left: 55%;
-// }
-// #linkedin {
-//   position: absolute;
-//   top: 30%;
-//   right: 20%;
-// }
-// #plane {
-//   position: absolute;
-//   top: 50%;
-//   right: 10%;
-// }
+// .quote {
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   color: rgba($c0, 0.1);
+//   font-family: $mainfont, serif;
+//   font-size: 6em;
+//   font-weight: 700;
+//   margin: $border*2;
+//   line-height: 0;
+//   @media(max-width: 400px) {
+//     display: none;
+//   }
 // }

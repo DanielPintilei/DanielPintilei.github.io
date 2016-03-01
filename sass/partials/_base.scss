@@ -15,30 +15,30 @@ body {
 .container.fluid {
   margin: 0 auto;
 }
-@font-face {
-  font-family: KlinicLight;
-  src: url("/fonts/KlinicSlabLight.otf");
-}
+// @font-face {
+//   font-family: KlinicLight;
+//   src: url("/fonts/KlinicSlabLight.otf");
+// }
 @font-face {
   font-family: KlinicLightIt;
   src: url("/fonts/KlinicSlabLightIt.otf");
 }
-@font-face {
-  font-family: KlinicBook;
-  src: url("/fonts/KlinicSlabBook.otf");
-}
-@font-face {
-  font-family: KlinicBookIt;
-  src: url("/fonts/KlinicSlabBookIt.otf");
-}
+// @font-face {
+//   font-family: KlinicBook;
+//   src: url("/fonts/KlinicSlabBook.otf");
+// }
+// @font-face {
+//   font-family: KlinicBookIt;
+//   src: url("/fonts/KlinicSlabBookIt.otf");
+// }
 @font-face {
   font-family: KlinicBold;
   src: url("/fonts/KlinicSlabBold.otf");
 }
-@font-face {
-  font-family: KlinicBoldItalic;
-  src: url("/fonts/KlinicSlabBoldIt.otf");
-}
+// @font-face {
+//   font-family: KlinicBoldItalic;
+//   src: url("/fonts/KlinicSlabBoldIt.otf");
+// }
  ::selection {
   color: $c0;
   background: transparent;

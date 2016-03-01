@@ -81,12 +81,15 @@
   right: 0;
   bottom: 0;
   left: 0;
-  max-width: 523px;
+  max-width: 525px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: $border*4;
   cursor: default;
   font-size: responsive 0.8rem 1.4rem;
+  @media(max-width: 1400px) {
+    margin-bottom: 4rem;
+  }
   @media(max-width: 700px) {
     margin: 0 2rem 4rem;
   }
@@ -128,7 +131,7 @@
 }
 .titlu {
   padding: 1.4rem 0;
-  max-width: 523px;
+  max-width: 525px;
   margin-left: auto;
   margin-right: auto;
   color: $c0;
@@ -140,9 +143,12 @@
     margin-top:12rem;
     font-family: $font1;
     font-size: responsive 2.4rem 5rem;
-    font-weight: 700;
+    font-weight: 500;
     font-range: 300px 1280px;
     text-align: justify;
+    @media(max-width: 1400px) {
+      margin-top: 4rem;
+    }
     @media(max-width: 950px) {
       margin-top: 8rem;
     }
@@ -151,6 +157,7 @@
     font-size: responsive 1.2rem 1.8rem;
     font-family: $font2it;
     margin-bottom: 3rem;
+    font-weight: 600;
   }
   // p {
   //   font-family: $font4;

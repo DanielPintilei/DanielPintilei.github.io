@@ -46,7 +46,7 @@
   width: 100%;
   height: 100%;
   border: $border solid $c01;
-  background-color: rgba($bg, 0.5);
+  background-color: rgba($bg, 0);
 }
 #menu-wrapper {
   display: flex;
@@ -136,6 +136,7 @@
   margin-right: auto;
   color: $c0;
   cursor: default;
+  text-align: justify;
   @media(max-width: 950px) {
     padding: 1.4rem 2rem 0;
   }
@@ -153,12 +154,12 @@
       margin-top: 8rem;
     }
   }
-  h3 {
-    font-size: responsive 1.2rem 1.8rem;
-    font-family: $font2it;
-    margin-bottom: 3rem;
-    font-weight: 600;
-  }
+  // h3 {
+  //   font-size: responsive 1.2rem 1.8rem;
+  //   font-family: $font2it;
+  //   margin-bottom: 3rem;
+  //   font-weight: 600;
+  // }
   // p {
   //   font-family: $font4;
   //   padding-left: 0;
@@ -175,6 +176,9 @@
   height: $border;
   background-color: $fg;
   bottom: 0;
+}
+.amp {
+  font-family: 'Playfair Display', serif;
 }
 // .titlu {
 //   display: flex;

@@ -8,21 +8,24 @@ body {
   font-size: 14px;
 }
 .container {
-  // padding: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 .container.fluid {
   margin: 0 auto;
 }
+@font-face {
+  font-family: Calendas;
+  src: url("/fonts/.otf");
+}
 // @font-face {
 //   font-family: KlinicLight;
 //   src: url("/fonts/KlinicSlabLight.otf");
 // }
-@font-face {
-  font-family: KlinicLightIt;
-  src: url("/fonts/KlinicSlabLightIt.otf");
-}
+// @font-face {
+//   font-family: KlinicLightIt;
+//   src: url("/fonts/KlinicSlabLightIt.otf");
+// }
 // @font-face {
 //   font-family: KlinicBook;
 //   src: url("/fonts/KlinicSlabBook.otf");
@@ -30,11 +33,11 @@ body {
 // @font-face {
 //   font-family: KlinicBookIt;
 //   src: url("/fonts/KlinicSlabBookIt.otf");
+// // }
+// @font-face {
+//   font-family: KlinicBold;
+//   src: url("/fonts/KlinicSlabBold.otf");
 // }
-@font-face {
-  font-family: KlinicBold;
-  src: url("/fonts/KlinicSlabBold.otf");
-}
 // @font-face {
 //   font-family: KlinicBoldItalic;
 //   src: url("/fonts/KlinicSlabBoldIt.otf");

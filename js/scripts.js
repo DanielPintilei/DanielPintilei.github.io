@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".menu").click(function(){$("#bottom-bar").fadeToggle(),$("#top-bar").fadeToggle(),$("#menu").fadeToggle(),$(this).toggleClass("menu-bg"),$(".titlu").fadeToggle(),$("#contact").fadeToggle()})});

@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
-var sass = require('gulp-sass');
+var scss = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var rucksack = require('rucksack-css');
@@ -55,9 +55,9 @@ gulp.task('css', function() {
     })
   ];
 
-  return gulp.src('sass/**/*.scss')
+  return gulp.src('scss/**/*.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass()).on('error', notify.onError(function(error) {
+    .pipe(scss()).on('error', notify.onError(function(error) {
       return "Problem file : " + error.message;
     }))
     .pipe(postcss(processors))
@@ -69,7 +69,7 @@ gulp.task('css', function() {
 gulp.task('default', function() {
   gulp.watch('hbs/**/*.hbs', ['html']);
   gulp.watch('*.html').on('change', browserSync.reload);
-  gulp.watch('sass/**/*.scss', ['css']);
+  gulp.watch('scss/**/*.scss', ['css']);
   gulp.watch('js/*.js').on('change', browserSync.reload);
   browserSync.init({
     server: {

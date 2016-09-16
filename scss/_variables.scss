@@ -7,7 +7,12 @@ $font1: 'Calendas', serif;
 // $c0: #fff8f0;
 // $c01: #988a7b;
 
-$bg: #fcfbf9;
-$fg: #232323;
+// $bg: #fcfbf9;
+// $fg: #232323;
+// $c0: $fg;
+// $c01: #F83A3A;
+
+$bg: #1c0e3f;
+$fg: #16e99e;
 $c0: $fg;
-$c01: #F83A3A;
+$c01: lighten($bg, 20%);

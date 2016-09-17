@@ -11,6 +11,25 @@
   background-color: $fg;
   bottom: 0;
 }
+.top-border-e {
+  position: fixed;
+  top: -89px;
+  left: -2vw;
+  width: 285px;
+  height: auto;
+  z-index: 2;
+  @media (min-width: 400px) {
+    left: 12vw;
+  }
+}
+.bottom-border-e {
+  position: fixed;
+  bottom: -89px;
+  right: 2vw;
+  width: 285px;
+  height: auto;
+  z-index: 2;
+}
 .logo {
   position: fixed;
   top: $border*2;
@@ -69,7 +88,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding-top: 50px;
   }
 }

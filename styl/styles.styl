@@ -1,3 +1,30 @@
+$border = 1.4rem;
+$font1 = 'Calendas', serif;
+$bg = #1c0e3f;
+$fg = #16e99e;
+$c0 = $fg;
+$c01 = lighten($bg, 23%);
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: $bg;
+}
+@font-face {
+  font-family: Calendas;
+  src: url("/fonts/Calendas_Plus.otf");
+}
+ ::selection {
+  color: $c0;
+  background: transparent;
+  text-shadow: none;
+}
+a {
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
 .top-border {
   position: fixed;
   width: 100%;
@@ -56,8 +83,8 @@
 }
 .logo {
   position: fixed;
-  top: $border*2;
-  left: $border*2;
+  top: $border * 2;
+  left: $border * 2;
   width: 3em;
 }
 .logo__img {
@@ -84,8 +111,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: $border*3.2;
-  height: $border*3.2;
+  width: $border * 3.2;
+  height: $border * 3.2;
   background-color: $fg;
 }
 .menu__d {
@@ -94,7 +121,7 @@
 .menu__link {
   position: relative;
   display: block;
-  padding: $border/2;
+  padding: ($border / 2);
   &::before {
     content: "";
     position: absolute;
@@ -137,10 +164,12 @@
 .titlu__h {
   margin-bottom: 0;
   font-family: $font1;
-  font-size: responsive 5rem 8rem;
-  font-range: 300px 1280px;
+  font-size: calc(5rem + 3 * ((100vw - 18.75rem) / 61.25));
   font-weight: 500;
   border-bottom: 7px solid $c01;
+  @media screen and (min-width: 1280px) {
+    font-size: 8rem;
+  }
 }
 .social {
   display: flex;

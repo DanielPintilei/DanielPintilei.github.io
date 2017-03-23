@@ -26,7 +26,6 @@ gulp.task('watch', function() {
     server: {
       baseDir: './'
     },
-    tunnel: false,
     notify: false
   });
 });

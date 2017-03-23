@@ -107,33 +107,23 @@ a {
     stroke-dashoffset: 0;
   }
 }
-.menu {
+.cake {
   position: absolute;
   top: 0;
   right: 0;
-  width: $border * 3.2;
-  height: $border * 3.2;
-  background-color: $fg;
 }
-.menu__d {
+.cake__b {
+  fill: $fg;
+}
+.cake__d {
   fill: $bg;
 }
-.menu__link {
-  position: relative;
+.cake__link {
   display: block;
-  padding: ($border / 2);
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -9px;
-    left: -9px;
-    width: 40px;
-    height: 20px;
-    transform: rotate(24deg);
-    background-color: $bg;
-  }
+  width: $border * 3.2;
+  height: $border * 3.2;
 }
-.menu__img {
+.cake__img {
   width: 100%;
   height: auto;
 }

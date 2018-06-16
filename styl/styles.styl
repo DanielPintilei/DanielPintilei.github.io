@@ -107,27 +107,6 @@ a {
     stroke-dashoffset: 0;
   }
 }
-.cake {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-}
-.cake__b {
-  fill: $fg;
-}
-.cake__d {
-  fill: $bg;
-}
-.cake__link {
-  display: block;
-  width: $border * 3.2;
-  height: $border * 3.2;
-}
-.cake__img {
-  width: 100%;
-  height: auto;
-}
 .landing {
   min-height: 100vh;
   width: 100%;
@@ -155,11 +134,11 @@ a {
 .titlu__h {
   margin-bottom: 0;
   font-family: $font1;
-  font-size: calc(5rem + 3 * ((100vw - 18.75rem) / 61.25));
+  font-size: 2.4rem;
   font-weight: 500;
   border-bottom: 7px solid $c01;
-  @media screen and (min-width: 1280px) {
-    font-size: 8rem;
+  @media screen and (min-width: 700px) {
+    font-size: 3rem;
   }
 }
 .social {
